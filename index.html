@@ -2,33 +2,55 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>2048</title>
-
+  <title>OnlyPepes 2048</title>
+  <meta name="description" content="Play 2048 with OnlyPepes! Join the numbers and get to the 2048 tile in this addictive puzzle game.">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Winky+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link href="style/main.css" rel="stylesheet" type="text/css">
-  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="shortcut icon" href="assets/logo-2048.png">
   <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
   <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone 5+ -->
   <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x920.png"  media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone, retina -->
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://2048.onlypepes.com/">
+  <meta property="og:title" content="OnlyPepes 2048">
+  <meta property="og:description" content="Play 2048 with OnlyPepes! Join the numbers and get to the 2048 tile in this addictive puzzle game.">
+  <meta property="og:image" content="https://2048.onlypepes.com/assets/logo-2048.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://2048.onlypepes.com/">
+  <meta property="twitter:title" content="OnlyPepes 2048">
+  <meta property="twitter:description" content="Play 2048 with OnlyPepes! Join the numbers and get to the 2048 tile in this addictive puzzle game.">
+  <meta property="twitter:image" content="https://2048.onlypepes.com/assets/logo-2048.png">
+
   <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="theme-color" content="#000000">
 
   <meta name="HandheldFriendly" content="True">
   <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
 </head>
 <body>
   <div class="container">
     <div class="heading">
-      <h1 class="title">2048</h1>
-      <div class="scores-container">
-        <div class="score-container">0</div>
-        <div class="best-container">0</div>
-      </div>
+      <!-- <h1 class="title">2048</h1> -->
+      <h1 class="title"><img src="assets/logo-2048.png" alt="OnlyPepes 2048" class="title-logo"></h1>
+    </div>
+    <div class="scores-container">
+      <div class="score-container">0</div>
+      <div class="best-container">0</div>
     </div>
 
     <div class="above-game">
       <p class="game-intro">Join the numbers and get to the <strong>2048 tile!</strong></p>
-      <a class="restart-button">New Game</a>
+      <a class="restart-button">
+        <img src="assets/new-game.png" alt="New Game" class="new-game-image">
+      </a>
     </div>
 
     <div class="game-container">
@@ -72,18 +94,15 @@
       </div>
     </div>
 
-    <p class="game-explanation">
+   <p class="game-explanation">
       <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
     </p>
-    <hr>
-    <p>
-    <strong class="important">Note:</strong> This site is the official version of 2048. You can play it on your phone via <a href="http://git.io/2048">http://git.io/2048.</a> All other apps or sites are derivatives or fakes, and should be used with caution.
-    </p>
-    <hr>
-    <p>
-    Created by <a href="http://gabrielecirulli.com" target="_blank">Gabriele Cirulli.</a> Based on <a href="https://itunes.apple.com/us/app/1024!/id823499224" target="_blank">1024 by Veewo Studio</a> and conceptually similar to <a href="http://asherv.com/threes/" target="_blank">Threes by Asher Vollmer.</a>
-    </p>
+
   </div>
+
+  <a href="https://onlypepes.com" target="_blank" class="onlypepes-link">
+    <img src="assets/onlypepes-logo.png" alt="OnlyPepes" class="icon">
+  </a>
 
   <script src="js/bind_polyfill.js"></script>
   <script src="js/classlist_polyfill.js"></script>
