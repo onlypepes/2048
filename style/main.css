@@ -777,6 +777,30 @@ hr {
   .game-message .lower {
     margin-top: 30px !important;
   }
+
+  .tile.tile-128 .tile-inner {
+    font-size: 25px;
+  }
+
+  .tile.tile-256 .tile-inner {
+    font-size: 25px;
+  }
+
+  .tile.tile-512 .tile-inner {
+    font-size: 25px;
+  }
+
+  .tile.tile-1024 .tile-inner {
+    font-size: 20px;
+  }
+
+  .tile.tile-2048 .tile-inner {
+    font-size: 20px;
+  }
+
+  .tile.tile-super .tile-inner {
+    font-size: 18px;
+  }
 }
 
 .icon {
