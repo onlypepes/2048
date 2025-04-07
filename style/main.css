@@ -857,3 +857,68 @@ hr {
     object-fit: contain;
   }
 }
+
+/* Music player styles */
+.music-toggle-container {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.music-toggle {
+  position: relative;
+  display: inline-block;
+  background: #8f7a66;
+  border-radius: 50%;
+  padding: 8px;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 19px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.music-toggle:hover {
+  background-color: #9f8b77;
+}
+
+.music-toggle:active {
+  transform: scale(0.9);
+}
+
+.music-toggle.muted .music-icon::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background-color: #d94141;
+  transform: rotate(-45deg);
+  top: 16px;
+  left: 5px;
+}
+
+.music-icon {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 520px) {
+  .music-toggle {
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+    line-height: 18px;
+  }
+  
+  .music-icon {
+    font-size: 16px;
+  }
+  
+  .music-toggle.muted .music-icon::after {
+    width: 22px;
+    top: 14px;
+    left: 4px;
+  }
+}
