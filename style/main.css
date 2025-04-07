@@ -870,11 +870,11 @@ hr {
   display: inline-block;
   background: #8f7a66;
   border-radius: 50%;
-  padding: 8px;
-  width: 35px;
-  height: 35px;
+  padding: 10px;
+  width: 60px;
+  height: 60px;
   text-align: center;
-  line-height: 19px;
+  line-height: 40px;
   color: white;
   border: none;
   cursor: pointer;
@@ -889,36 +889,40 @@ hr {
   transform: scale(0.9);
 }
 
-.music-toggle.muted .music-icon::after {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 2px;
-  background-color: #d94141;
-  transform: rotate(-45deg);
-  top: 16px;
-  left: 5px;
+.music-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
-.music-icon {
-  font-size: 18px;
+.music-toggle.muted .music-icon {
+  opacity: 0.5;
+}
+
+.music-toggle.muted::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background-color: #d94141;
+  transform: rotate(-45deg);
+  top: 28px;
+  left: 10px;
 }
 
 @media screen and (max-width: 520px) {
   .music-toggle {
-    width: 30px;
-    height: 30px;
-    padding: 6px;
-    line-height: 18px;
+    width: 45px;
+    height: 45px;
+    padding: 8px;
+    line-height: 29px;
   }
   
-  .music-icon {
-    font-size: 16px;
-  }
-  
-  .music-toggle.muted .music-icon::after {
-    width: 22px;
-    top: 14px;
-    left: 4px;
+  .music-toggle.muted::after {
+    width: 32px;
+    height: 2px;
+    top: 22px;
+    left: 7px;
   }
 }
